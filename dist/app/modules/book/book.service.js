@@ -20,6 +20,7 @@ const createBookDB = (data) => __awaiter(void 0, void 0, void 0, function* () {
     return result;
 });
 exports.createBookDB = createBookDB;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getBooksDB = (query) => __awaiter(void 0, void 0, void 0, function* () {
     const initialQuery = [];
     if (query.search) {

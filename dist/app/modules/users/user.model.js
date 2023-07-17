@@ -56,7 +56,7 @@ const userSchema = new mongoose_1.Schema({
 // is user exist
 userSchema.statics.isUserExist = function (email) {
     return __awaiter(this, void 0, void 0, function* () {
-        return yield exports.User.findOne({ email: email }, { email: 1, password: 1, needChangePassword: 1, role: 1 });
+        return yield exports.User.findOne({ email: email }, { email: 1, password: 1 });
     });
 };
 // is password match
