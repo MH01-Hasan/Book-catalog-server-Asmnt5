@@ -8,6 +8,7 @@ export const createBookDB = async (data: iBook): Promise<iBook> => {
   return result;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getBooksDB = async (query: any): Promise<iBook[] | null> => {
   const initialQuery = [];
 
